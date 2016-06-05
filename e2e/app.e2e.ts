@@ -5,7 +5,7 @@ describe('my-angular2 App', function() {
 
   beforeEach(() => {
     page = new MyAngular2Page();
-  })
+  });
 
   it('should display message saying app works', () => {
     page.navigateTo();

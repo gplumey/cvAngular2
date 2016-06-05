@@ -7,7 +7,7 @@
     "start": "ng server",
     "postinstall": "typings install",
     "lint": "tslint \"src/**/*.ts\"",
-    "format": "clang-format -i -style=file --glob=src/**/*.ts",
+    "test": "ng test",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
@@ -16,6 +16,7 @@
     "@angular/common": "2.0.0-rc.1",
     "@angular/compiler": "2.0.0-rc.1",
     "@angular/core": "2.0.0-rc.1",
+    "@angular/http": "2.0.0-rc.1",
     "@angular/platform-browser": "2.0.0-rc.1",
     "@angular/platform-browser-dynamic": "2.0.0-rc.1",
     "@angular/router": "2.0.0-rc.1",
@@ -26,9 +27,10 @@
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "angular-cli": "0.0.*",
-    "clang-format": "^1.0.35",
-    "codelyzer": "0.0.14",
+    "angular-cli": "^1.0.0-beta.5",
+    "codelyzer": "0.0.19",
+    "compass": "^0.1.1",
+    "compass-mixins": "^0.12.10",
     "ember-cli-inject-live-reload": "^1.4.0",
     "jasmine-core": "^2.4.1",
     "jasmine-spec-reporter": "^2.4.0",

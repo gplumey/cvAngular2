@@ -1,2 +1,2 @@
-export {environment} from './environment';
-export {MyAngular2AppComponent} from './my-angular2.component';
+export * from './environment';
+export * from './my-angular2.component';
