@@ -1,0 +1,68 @@
+@import "screen";
+
+.action-bar{
+    width:100%;
+    text-align: right;
+    padding-right : $h-margin;  
+    padding-left: $h-margin;
+}
+
+.form-input {
+    width:100%;
+    padding : 10px 0px;
+    
+    label.field-label{
+        float: left;
+        width:100%;      
+            text-align: left;
+        
+        @media screen and (min-width: $width-break-large) {
+            width:33%;
+            text-align: right;    
+        }
+        font-weight: bold;
+        padding : 2px $h-margin;
+    }
+    .input-container{float: left;
+        padding-right : $h-margin;  
+        padding-left: $h-margin;
+        
+        @media screen and (min-width: $width-break-large) {
+            padding-left: 0px;
+        }  
+        
+        width: 100%;
+        @media screen and (min-width: $width-break-large) {
+             width: 67%;    
+        }
+        
+        
+        input {
+           width: 100%;
+           color: black;
+           padding:4px;
+        }
+        
+        textarea {
+           width: 100%;
+            color: black;
+           padding:4px;
+        }
+        
+        .ui-dropdown {
+           width: 100%; 
+          
+           .ui-dropdown-trigger {
+               width:35px;
+           }
+        }
+        
+        
+        .check-item{
+            float:left;
+            width:33%;
+        }
+        
+
+    }
+}

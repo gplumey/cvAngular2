@@ -1,0 +1,156 @@
+@import "screen";
+
+@import "compass/css3/box-shadow";
+
+
+@mixin column() {    
+  @include container;
+  padding: $h-margin 0px;
+  height: 100%;
+}
+
+@mixin entry {
+    padding-top: $v-margin;
+    padding-left: $h-margin; 
+    display: block;
+}
+
+
+.marginLeft{
+    margin-left: $h-margin; 
+}
+
+skill{
+    display:block;
+}
+
+
+
+
+.cv-container {
+    @include panel;
+   
+    margin-top: 70px;
+    margin-bottom: 50px;
+  
+    width: 100%;    
+    display: table;
+   
+  
+
+
+    .cv-left-container {
+        display: table-column;
+        @include column;
+        @include primary;
+        width : 33%;
+        
+        @media screen and (max-width: $width-break-small) {
+           width:100%;      
+        }
+        .picturePlusContact {
+            .picture-container{
+                
+                @media screen and (max-width: $width-break-small) {
+                    display: table-cell;
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                }
+                
+                    .picture {
+                        display: block;
+                        margin:30px  auto;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 100px;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        background: url(app/picture/gplumey.jpg) no-repeat;  
+                        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+                        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+                        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);  
+                    }
+                }
+                
+            .contact {
+                display: table-cell;
+                
+                @media screen and (max-width: $width-break-small) {
+                    //float:right;
+                    //width: 50%;
+                    display: table-cell;
+                }
+                
+                
+                 .name{
+                    @include bigger;
+                    text-align: center;
+                }
+                
+                address{
+                    @include entry;     
+                }
+                
+                age{
+                    @include entry;     
+                }
+            }     
+        
+        
+}
+        .additionalSections{
+            @media screen and (max-width: $width-break-small) {
+                display: none;      
+            }    
+        }
+       
+        
+       
+    }
+
+    .cv-right-container {
+        @include column;
+        @include secondary;
+        width : 67%;
+        @media screen and (max-width: $width-break-small) {
+           width:100%;      
+        }
+        
+        .title {
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 30px;
+            height:100px;
+        }
+    }
+ 
+ 
+    .additionalSectionsSmallScreen{
+        @include primary;
+         @include column;
+         display: block;
+         width: 100%;
+         @media screen and (min-width: $width-break-small) {
+                display: none;      
+         } 
+         
+         skill{
+             display: block;
+             float: left;
+             width: 25%;
+         }
+    }
+}
+
+
+ 
+ entry {
+     @include entry;
+ }
+ 
+ 
+           
+ 
+ 

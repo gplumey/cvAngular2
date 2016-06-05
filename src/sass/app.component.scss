@@ -1,0 +1,34 @@
+@import "screen";
+
+@import "compass/css3/box-shadow";
+
+
+
+.content {
+    display: block;
+    width:100%;      
+    @media screen and (min-width: $width-break-large) {
+        width: $width-break-large;
+    }
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+
+send-mail {
+    @include panel;
+    margin-bottom: $h-margin;
+    @include primary;
+    padding: $h-margin - 10px 0px  ;
+    width: 100%;
+}
+
+
+body{
+    height:100%;
+}
+
+html{
+    height:100%;
+}
+

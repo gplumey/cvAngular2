@@ -1,0 +1,38 @@
+<div class="cv-container">
+    <div class="cv-left-container">
+
+        <div class="picturePlusContact">
+            <div class="picture-container">
+                <div class="picture"></div>
+            </div>
+            <div class="contact">
+                <div class="name">{{cv.firstName}} {{cv.lastName}}</div>
+                <address [address]="cv.address"></address>
+                <entry>{{cv.phoneNumber}}</entry>
+                <entry>{{cv.email}}</entry>
+                <age [birthday]="cv.birthday" [gender]="cv.gender"></age>
+                <entry>{{cv.permit}}</entry>
+            </div>
+        </div>
+        <div class="additionalSections">
+            <section *ngFor="let section of cv.additionalSections" [section]="section" [styleClass]=" 'secondary' ">
+                <skill *ngFor="let item of section.items" [skill]="item" class="marginLeft"></skill>
+            </section>
+        </div>
+    </div>
+
+    <div class="cv-right-container">
+        <div class="title">{{cv.professionTitle}}</div>
+
+        <section *ngFor="let section of cv.sections" [section]="section" [styleClass]=" 'main' ">
+            <mission *ngFor="let item of section.items" [mission]="item" class="marginLeft"></mission>
+        </section>
+    </div>
+
+    <div class="additionalSectionsSmallScreen">
+        <section *ngFor="let section of cv.additionalSections" [section]="section" [styleClass]=" 'secondary' ">
+            <skill *ngFor="let item of section.items" [skill]="item" class="marginLeft"></skill>
+            <div style="clear:both;"></div>
+        </section>
+    </div>
+</div>

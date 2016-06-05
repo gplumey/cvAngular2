@@ -1,0 +1,27 @@
+@import "screen";
+ 
+.section-title {
+    @include bigger;
+    margin-top: $v-margin;
+    
+    padding-left: $h-margin ;
+    
+    &.main{
+        
+        @include primary;
+        text-align: center;
+        margin-right: $h-margin * 4;
+        
+        @media screen and (max-width: $width-break-small) {
+           margin-right:0px;      
+        }
+    }
+    &.secondary{
+        @include primaryReverse;
+        margin-right: $h-margin;
+    }
+}
+
+.section-items{
+      padding-top: 10px;
+}
