@@ -4,8 +4,7 @@ import {I18nSelectPipe} from '@angular/common';
 @Component({
   moduleId: module.id,
   selector: 'age',
-  templateUrl: 'age.component.html',
-  styleUrls: ['age.component.css']
+  templateUrl: 'age.component.html'
 })
 export class AgeComponent implements OnInit {
   @Input("birthday") public birthday: Date;

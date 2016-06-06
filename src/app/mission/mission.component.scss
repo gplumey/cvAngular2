@@ -1,0 +1,32 @@
+@import "../styles/screen";
+.mission{
+    .date {
+        display: block;
+        float: left;
+        width: 20%;
+        text-align: center; 
+    }
+
+ 
+    .description{ width: 80%;
+        display: block;
+        float: left;
+    }
+    
+    .title {
+        font-weight: bold;
+    }
+    
+    .env {
+        color:$secondary-color;
+          margin-top: $v-margin /2 ;
+    }
+    
+    .subject {
+        margin-top: $v-margin /2 ;
+    }
+    
+    margin-right:$h-margin;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

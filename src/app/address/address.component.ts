@@ -3,8 +3,7 @@ import { Address } from '../domain/address.interface';
 @Component({
   moduleId: module.id,
   selector: 'address',
-  templateUrl: 'address.component.html',
-  styleUrls: ['address.component.css']
+  templateUrl: 'address.component.html'
 })
 export class AddressComponent implements OnInit {
   @Input("address") public address: Address;

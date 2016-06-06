@@ -1,8 +1,9 @@
 <div class="mission">
   <div class="date">{{mission.date}}</div>
   <div class="description">
-    <div class="title">{{mission.label}}</div>
+    <div class="title">{{mission.label}} - {{mission.company}}</div>
     <div class="subject">{{mission.subject}}</div>
+    <div class="env" *ngIf="mission.environment">Environnement : {{mission.environment}}</div>
   </div>
   <div style="clear:both;"></div>
 

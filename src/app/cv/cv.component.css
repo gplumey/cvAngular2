@@ -1,0 +1,234 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 77, ../styles/_screen.scss */
+my-app {
+  display: block;
+  height: 100%;
+  width: 1200px;
+  margin: auto;
+}
+
+/* line 5, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 19, cv.component.scss */
+.marginLeft {
+  margin-left: 30px;
+}
+
+/* line 23, cv.component.scss */
+skill {
+  display: block;
+}
+
+/* line 30, cv.component.scss */
+.cv-container {
+  position: relative;
+  float: left;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: table;
+}
+@media screen and (min-width: 1200px) {
+  /* line 30, cv.component.scss */
+  .cv-container {
+    width: 1200px;
+    -moz-box-shadow: black 2px 2px 10px;
+    -webkit-box-shadow: black 2px 2px 10px;
+    box-shadow: black 2px 2px 10px;
+  }
+}
+/* line 42, cv.component.scss */
+.cv-container .cv-left-container {
+  display: table-column;
+  float: left;
+  font-size: 20px;
+  padding: 30px 0px;
+  height: 100%;
+  color: white;
+  background-color: #0099DD;
+  width: 33%;
+}
+@media screen and (max-width: 900px) {
+  /* line 42, cv.component.scss */
+  .cv-container .cv-left-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 52, cv.component.scss */
+  .cv-container .cv-left-container .picturePlusContact .picture-container {
+    display: table-cell;
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+}
+/* line 61, cv.component.scss */
+.cv-container .cv-left-container .picturePlusContact .picture-container .picture {
+  display: block;
+  margin: 30px  auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(img/gplumey.jpg) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+/* line 76, cv.component.scss */
+.cv-container .cv-left-container .picturePlusContact .contact {
+  display: table-cell;
+}
+@media screen and (max-width: 900px) {
+  /* line 76, cv.component.scss */
+  .cv-container .cv-left-container .picturePlusContact .contact {
+    display: table-cell;
+  }
+}
+/* line 86, cv.component.scss */
+.cv-container .cv-left-container .picturePlusContact .contact .name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 91, cv.component.scss */
+.cv-container .cv-left-container .picturePlusContact .contact address {
+  padding-top: 15px;
+  padding-left: 30px;
+  display: block;
+}
+/* line 95, cv.component.scss */
+.cv-container .cv-left-container .picturePlusContact .contact age {
+  padding-top: 15px;
+  padding-left: 30px;
+  display: block;
+}
+@media screen and (max-width: 900px) {
+  /* line 102, cv.component.scss */
+  .cv-container .cv-left-container .additionalSections {
+    display: none;
+  }
+}
+/* line 112, cv.component.scss */
+.cv-container .cv-right-container {
+  float: left;
+  font-size: 20px;
+  padding: 30px 0px;
+  height: 100%;
+  color: black;
+  background-color: white;
+  width: 67%;
+}
+@media screen and (max-width: 900px) {
+  /* line 112, cv.component.scss */
+  .cv-container .cv-right-container {
+    width: 100%;
+  }
+}
+/* line 120, cv.component.scss */
+.cv-container .cv-right-container .title {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
+  height: 100px;
+}
+/* line 130, cv.component.scss */
+.cv-container .additionalSectionsSmallScreen {
+  color: white;
+  background-color: #0099DD;
+  float: left;
+  font-size: 20px;
+  padding: 30px 0px;
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  /* line 130, cv.component.scss */
+  .cv-container .additionalSectionsSmallScreen {
+    display: none;
+  }
+}
+/* line 139, cv.component.scss */
+.cv-container .additionalSectionsSmallScreen skill {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+/* line 149, cv.component.scss */
+entry {
+  padding-top: 15px;
+  padding-left: 30px;
+  display: block;
+}

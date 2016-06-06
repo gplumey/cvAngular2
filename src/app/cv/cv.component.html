@@ -22,10 +22,11 @@
     </div>
 
     <div class="cv-right-container">
-        <div class="title">{{cv.professionTitle}}</div>
+        <div class="title">{{cv.professionTitle}} <br>{{cv.professionSubTitle}}</div>
+        
 
         <section *ngFor="let section of cv.sections" [section]="section" [styleClass]=" 'main' ">
-            <mission *ngFor="let item of section.items" [mission]="item" class="marginLeft"></mission>
+            <mission *ngFor="let item of section.items" [mission]="item" class=""></mission>
         </section>
     </div>
 

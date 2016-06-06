@@ -14,4 +14,5 @@ export interface CurriculumVitae {
     additionalSections: Section[];
     sections: Section[];
     professionTitle:string;
+    professionSubTitle:string;
 }
