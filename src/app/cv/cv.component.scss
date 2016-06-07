@@ -135,6 +135,13 @@ skill{
             margin-top: 25;
             height:100px;
         }
+        
+         skill{
+            // display: block;
+             display: inline-block;
+           //  float: left;
+             width: 25%;
+         }
     }
  
  
@@ -148,7 +155,8 @@ skill{
          } 
          
          skill{
-             display: block;
+            // display: block;
+             display: table-cell;
              float: left;
              width: 25%;
          }

@@ -75,17 +75,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, skill.component.scss */
-skill {
-  display: inline-block;
-  margin-top: 5px;
+/* line 2, subsection.component.scss */
+subsection {
+  display: table;
+  width: 100%;
+  margin-right: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
-/* line 6, skill.component.scss */
-skill .skill-title {
-  display: table-row;
+/* line 5, subsection.component.scss */
+subsection .title {
+  display: table-cell;
+  width: 20%;
+  text-align: center;
 }
-/* line 10, skill.component.scss */
-skill .skill-stars {
-  display: table-row;
-  border-spacing: 10px;
+/* line 10, subsection.component.scss */
+subsection .items {
+  display: table-cell;
+  margin-right: 30px;
+}
+/* line 13, subsection.component.scss */
+subsection .items skill {
+  display: table-cell;
+  min-width: 140px;
 }

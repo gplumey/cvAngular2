@@ -1,11 +1,13 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import {Section} from '../domain/section.interface';
+import {SubsectionComponent} from '../subsection/';
 
 @Component({
   moduleId: module.id,
   selector: 'section',
   templateUrl: 'section.component.html',
   styleUrls: ['section.component.css'],
+  directives:[],
   encapsulation : ViewEncapsulation.None
 })
 export class SectionComponent implements OnInit {

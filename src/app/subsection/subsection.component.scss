@@ -1,0 +1,23 @@
+@import "../styles/screen";
+subsection{
+    display: table;
+    width: 100%;
+    .title {
+        display: table-cell;
+        width: 20%;
+        text-align: center; 
+    }
+    .items {
+        display: table-cell;
+        margin-right:$h-margin;
+        skill{
+             display: table-cell;
+             min-width: 140px;
+        }
+    }
+    
+ 
+    margin-right:$h-margin;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

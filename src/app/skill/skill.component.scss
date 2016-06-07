@@ -1,5 +1,14 @@
 @import "../styles/screen";
 
 skill{
-   margin-left: $h-margin;    
+    display : inline-block;
+   margin-top: 5px;    
+   .skill-title{
+       display: table-row;
+   }
+   
+   .skill-stars{
+       display: table-row;
+       border-spacing:10px;
+   }
 }

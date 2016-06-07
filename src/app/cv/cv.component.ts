@@ -5,6 +5,7 @@ import {SectionComponent} from '../section/';
 import {AgeComponent} from '../age/';
 import {SkillComponent} from '../skill';
 import {MissionComponent} from '../mission';
+import {SubsectionComponent} from '../subsection';
 
 @Component({
     moduleId: module.id,
@@ -12,7 +13,7 @@ import {MissionComponent} from '../mission';
     templateUrl: 'cv.component.html',
     styleUrls: ['cv.component.css'],
     directives: [AddressComponent, SectionComponent, AgeComponent,
-        SkillComponent, MissionComponent]
+        SkillComponent, MissionComponent, SubsectionComponent]
 
 })
 export class CvComponent implements OnInit {
@@ -73,15 +74,45 @@ export class CvComponent implements OnInit {
                 }, {
                     title: "Compétences technique",
                     // type: SectionCONST.SKILLS;
-                    items: [
-                        { label: "J2EE", score: 0.8 },
-                        { label: "Hibernate", score: 0.8 },
-                        { label: "Spring framework", score: 0.8 },
-                        { label: "JSF/Primefaces", score: 1 },
-                        { label: "Oracle", score: 0.8 },
-                        { label: "Angular2", score: 0.4 },
-                        { label: "Jenkins", score: 0.4 }
-                    ]
+                    sections:[{
+                        title:"Langages",
+                        items: [
+                            { label: "Java", score: 0.8 },
+                            { label: "Javascript", score: 0.5 },
+                            { label: "PL/SQL", score: 0.8 },
+                            { label: "TypdeScript", score: 0.5 }
+                        ]},{
+                        title:"Côté serveur",
+                        items: [
+                            { label: "J2EE", score: 0.8 },
+                            { label: "Hibernate", score: 0.8 },
+                            { label: "Spring core", score: 0.8 },
+                            { label: "Spring batch", score: 0.8 },
+                            { label: "Spring security", score: 0.8 }
+                        ]},{
+                        title:"Web services",
+                        items: [
+                            { label: "RestEasy", score: 0.8 },
+                            { label: "Soap", score: 0.8 }
+                        ]},{
+                        title:"Côté client",
+                        items: [
+                            { label: "JSF 2/Primefaces", score: 1 },
+                            { label: "Angular2", score: 0.4 },
+                            { label: "jquery", score: 0.4 }
+                        ]},{
+                        title:"Base de données",
+                        items: [
+                            { label: "Oracle", score: 0.8 },
+                            { label: "sqlServer", score: 0.5 }
+                        ]},{
+                        title:"Integration continue",
+                        items: [
+                            { label: "Maven", score: 0.4 },
+                            { label: "Jenkins", score: 0.4 },
+                            { label: "Selenium", score: 0.4 }
+                        ]}
+                       ]
 
                 }],
             professionTitle: "Ingénieur en développement - Leader technique",

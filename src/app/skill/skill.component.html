@@ -1,4 +1,10 @@
-<div>{{skill.label}}</div>
-<div *ngIf="skill.score > 0">
-    <i *ngFor="#star of stars" class="fa fa-{{getStartIcon(star)}} fa-fw"></i>
+<div style="display:inline-table">
+    <div class="skill-title">
+        <div style="display: table-cell">{{skill.label}}</div>
+    </div>
+    <div *ngIf="skill.score > 0" class="skill-stars">
+        <div style="display: table-cell ; padding-top:3px">
+            <div *ngFor="#star of stars" class="fa fa-{{getStartIcon(star)}} fa-fw"></div>
+        </div>
+    </div>
 </div>
