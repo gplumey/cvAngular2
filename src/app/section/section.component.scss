@@ -4,7 +4,7 @@
     @include bigger;
     margin-top: $v-margin;
     
-    padding-left: $h-margin * 4 ;
+    padding-left: $h-margin ;
     
     &.main{
         
@@ -19,6 +19,10 @@
     &.secondary{
         @include primaryReverse;
         margin-right: $h-margin;
+        
+          @media screen and (max-width: $width-break-small) {
+           margin-right:0px;      
+        }
     }
 }
 

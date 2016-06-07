@@ -4,9 +4,15 @@
 
 
 @mixin column() {    
-  @include container;
+  //@include container;
+   font-size: 20px; 
   padding: $h-margin 0px;
-  height: 100%;
+ // height: 100%;
+  display: table-cell;
+ 
+  @media screen and (max-width: $width-break-small) {
+    display: table-row;
+  }
 }
 
 @mixin entry {
@@ -40,26 +46,31 @@ skill{
 
 
     .cv-left-container {
-        display: table-column;
+        
+        display: table-cell;
+        height: 100%;
         @include column;
         @include primary;
         width : 33%;
         
         @media screen and (max-width: $width-break-small) {
+            display: table-row;
            width:100%;      
         }
         .picturePlusContact {
+            display: inline-table;
+            width: 100%;
+            
             .picture-container{
-                
+                display: table-row;
                 @media screen and (max-width: $width-break-small) {
                     display: table-cell;
-                    float: left;
                     width: 50%;
                     height: 100%;
                 }
                 
                     .picture {
-                        display: block;
+                      // display: block;
                         margin:30px  auto;
                         width: 200px;
                         height: 200px;
@@ -74,18 +85,19 @@ skill{
                 }
                 
             .contact {
-                display: table-cell;
+                 display: table-row;
                 
                 @media screen and (max-width: $width-break-small) {
                     //float:right;
-                    //width: 50%;
+                    width: 50%;
                     display: table-cell;
                 }
                 
                 
                  .name{
-                    @include bigger;
-                    text-align: center;
+                    @include xbigger;
+                     @include entry;   
+                  //  text-align: center;
                 }
                 
                 address{
@@ -118,10 +130,9 @@ skill{
         }
         
         .title {
-            font-size: 40px;
-            font-weight: bolder;
+            @include xbigger;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 25;
             height:100px;
         }
     }

@@ -35,6 +35,10 @@ $width-break-small:900px;
     font-weight: bold;
 }
 
+@mixin xbigger {
+    font-weight: bold; 
+   font-size: 32px; 
+   }
 
 
 @mixin container() {    

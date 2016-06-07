@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 77, ../styles/_screen.scss */
+/* line 81, ../styles/_screen.scss */
 my-app {
   display: block;
   height: 100%;
@@ -80,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 24px;
   font-weight: bold;
   margin-top: 15px;
-  padding-left: 120px;
+  padding-left: 30px;
 }
 /* line 9, section.component.scss */
 .section-title.main {
@@ -101,8 +101,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: white;
   margin-right: 30px;
 }
+@media screen and (max-width: 900px) {
+  /* line 19, section.component.scss */
+  .section-title.secondary {
+    margin-right: 0px;
+  }
+}
 
-/* line 25, section.component.scss */
+/* line 29, section.component.scss */
 .section-items {
   padding-top: 10px;
 }
