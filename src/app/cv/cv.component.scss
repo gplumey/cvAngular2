@@ -4,11 +4,9 @@
 
 
 @mixin column() {    
-  //@include container;
-   font-size: 20px; 
-  padding: $h-margin 0px;
- // height: 100%;
-  display: table-cell;
+ font-size: 20px; 
+ padding: $h-margin 0px;
+ display: table-cell;
  
   @media screen and (max-width: $width-break-small) {
     display: table-row;
@@ -26,18 +24,16 @@
     margin-left: $h-margin; 
 }
 
-skill{
-    display:block;
-}
-
-
 
 
 .cv-container {
     @include panel;
    
-    margin-top: 70px;
-    margin-bottom: 50px;
+   @media screen and (min-width: $width-break-large) {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    
   
     width: 100%;    
     display: table;
@@ -137,9 +133,7 @@ skill{
         }
         
          skill{
-            // display: block;
              display: inline-block;
-           //  float: left;
              width: 25%;
          }
     }
@@ -148,16 +142,15 @@ skill{
     .additionalSectionsSmallScreen{
         @include primary;
          @include column;
-         display: block;
+         display: table;
          width: 100%;
+         padding-bottom: 10x;
          @media screen and (min-width: $width-break-small) {
                 display: none;      
          } 
          
          skill{
-            // display: block;
-             display: table-cell;
-             float: left;
+             display: inline-block;
              width: 25%;
          }
     }

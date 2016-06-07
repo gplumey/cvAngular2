@@ -22,9 +22,12 @@ const barrels: string[] = [
   '@angular/router',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
+ 
 
   // Thirdparty barrels.
   'rxjs',
+  'jspdf',
+
 
   // App specific barrels.
   'app',
@@ -52,7 +55,8 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
+    'jspdf': 'vendor/jspdf.min.js'
   },
   packages: cliSystemConfigPackages
 });

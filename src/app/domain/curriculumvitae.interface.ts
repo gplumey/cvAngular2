@@ -8,7 +8,7 @@ export interface CurriculumVitae {
     gender:string;
     picture:string;
     address:Address;
-    phoneNumber:string;
+    phoneNumber?:string;
     email:string;
     permit:string;
     additionalSections: Section[];

@@ -10,7 +10,7 @@ my-app {
   margin: auto;
 }
 
-/* line 5, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,71 +32,64 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 25, cv.component.scss */
+/* line 23, cv.component.scss */
 .marginLeft {
   margin-left: 30px;
 }
 
 /* line 29, cv.component.scss */
-skill {
-  display: block;
-}
-
-/* line 36, cv.component.scss */
 .cv-container {
   position: relative;
   float: left;
   font-size: 20px;
-  margin-top: 70px;
-  margin-bottom: 50px;
   width: 100%;
   display: table;
 }
 @media screen and (min-width: 1200px) {
-  /* line 36, cv.component.scss */
+  /* line 29, cv.component.scss */
   .cv-container {
     width: 1200px;
     -moz-box-shadow: black 2px 2px 10px;
@@ -104,7 +97,14 @@ skill {
     box-shadow: black 2px 2px 10px;
   }
 }
-/* line 48, cv.component.scss */
+@media screen and (min-width: 1200px) {
+  /* line 29, cv.component.scss */
+  .cv-container {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
+/* line 44, cv.component.scss */
 .cv-container .cv-left-container {
   display: table-cell;
   height: 100%;
@@ -116,36 +116,36 @@ skill {
   width: 33%;
 }
 @media screen and (max-width: 900px) {
-  /* line 48, cv.component.scss */
+  /* line 44, cv.component.scss */
   .cv-container .cv-left-container {
     display: table-row;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 48, cv.component.scss */
+  /* line 44, cv.component.scss */
   .cv-container .cv-left-container {
     display: table-row;
     width: 100%;
   }
 }
-/* line 60, cv.component.scss */
+/* line 56, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact {
   display: inline-table;
   width: 100%;
 }
-/* line 64, cv.component.scss */
+/* line 60, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .picture-container {
   display: table-row;
 }
 @media screen and (max-width: 900px) {
-  /* line 64, cv.component.scss */
+  /* line 60, cv.component.scss */
   .cv-container .cv-left-container .picturePlusContact .picture-container {
     display: table-cell;
     width: 50%;
     height: 100%;
   }
 }
-/* line 72, cv.component.scss */
+/* line 68, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .picture-container .picture {
   margin: 30px  auto;
   width: 200px;
@@ -158,18 +158,18 @@ skill {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-/* line 87, cv.component.scss */
+/* line 83, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact {
   display: table-row;
 }
 @media screen and (max-width: 900px) {
-  /* line 87, cv.component.scss */
+  /* line 83, cv.component.scss */
   .cv-container .cv-left-container .picturePlusContact .contact {
     width: 50%;
     display: table-cell;
   }
 }
-/* line 97, cv.component.scss */
+/* line 93, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact .name {
   font-weight: bold;
   font-size: 32px;
@@ -177,25 +177,25 @@ skill {
   padding-left: 30px;
   display: block;
 }
-/* line 103, cv.component.scss */
+/* line 99, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact address {
   padding-top: 15px;
   padding-left: 30px;
   display: block;
 }
-/* line 107, cv.component.scss */
+/* line 103, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact age {
   padding-top: 15px;
   padding-left: 30px;
   display: block;
 }
 @media screen and (max-width: 900px) {
-  /* line 114, cv.component.scss */
+  /* line 110, cv.component.scss */
   .cv-container .cv-left-container .additionalSections {
     display: none;
   }
 }
-/* line 124, cv.component.scss */
+/* line 120, cv.component.scss */
 .cv-container .cv-right-container {
   font-size: 20px;
   padding: 30px 0px;
@@ -205,18 +205,18 @@ skill {
   width: 67%;
 }
 @media screen and (max-width: 900px) {
-  /* line 124, cv.component.scss */
+  /* line 120, cv.component.scss */
   .cv-container .cv-right-container {
     display: table-row;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 124, cv.component.scss */
+  /* line 120, cv.component.scss */
   .cv-container .cv-right-container {
     width: 100%;
   }
 }
-/* line 132, cv.component.scss */
+/* line 128, cv.component.scss */
 .cv-container .cv-right-container .title {
   font-weight: bold;
   font-size: 32px;
@@ -224,41 +224,41 @@ skill {
   margin-top: 25;
   height: 100px;
 }
-/* line 139, cv.component.scss */
+/* line 135, cv.component.scss */
 .cv-container .cv-right-container skill {
   display: inline-block;
   width: 25%;
 }
-/* line 148, cv.component.scss */
+/* line 142, cv.component.scss */
 .cv-container .additionalSectionsSmallScreen {
   color: white;
   background-color: #0099DD;
   font-size: 20px;
   padding: 30px 0px;
   display: table-cell;
-  display: block;
+  display: table;
   width: 100%;
+  padding-bottom: 10x;
 }
 @media screen and (max-width: 900px) {
-  /* line 148, cv.component.scss */
+  /* line 142, cv.component.scss */
   .cv-container .additionalSectionsSmallScreen {
     display: table-row;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 148, cv.component.scss */
+  /* line 142, cv.component.scss */
   .cv-container .additionalSectionsSmallScreen {
     display: none;
   }
 }
-/* line 157, cv.component.scss */
+/* line 152, cv.component.scss */
 .cv-container .additionalSectionsSmallScreen skill {
-  display: table-cell;
-  float: left;
+  display: inline-block;
   width: 25%;
 }
 
-/* line 168, cv.component.scss */
+/* line 161, cv.component.scss */
 entry {
   padding-top: 15px;
   padding-left: 30px;

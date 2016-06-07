@@ -1,16 +1,21 @@
 @import "../styles/screen";
 .mission{
+    display: table;
+    width: 100%;
+    margin-right:$h-margin;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
     .date {
-        display: block;
-        float: left;
+        display: table-cell;
         width: 20%;
         text-align: center; 
     }
 
  
-    .description{ width: 80%;
-        display: block;
-        float: left;
+    .description{ 
+        width: 80%;
+        display: table-cell;
     }
     
     .title {
@@ -26,7 +31,5 @@
         margin-top: $v-margin /2 ;
     }
     
-    margin-right:$h-margin;
-    padding-top: 3px;
-    padding-bottom: 3px;
+  
 }
