@@ -17,7 +17,6 @@
 
   "files": [
     "main.ts",
-    "typings.d.ts",
-    "node_modules/jspdf/dist/jspdf.min.js"
+    "typings.d.ts"
   ]
 }
