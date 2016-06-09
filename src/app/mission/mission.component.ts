@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
+import {ROUTER_DIRECTIVES} from '@angular/router';
+import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { Mission} from '../domain//mission.interface';
-import {CompanyService} from '../company.service';
 import {Company} from '../domain/company.interface';
 
 @Component({
@@ -8,24 +9,17 @@ import {Company} from '../domain/company.interface';
   selector: 'mission',
   templateUrl: 'mission.component.html',
   styleUrls: ['mission.component.css'],
-  encapsulation : ViewEncapsulation.None
-  //,  providers: [CompanyService]
+  encapsulation: ViewEncapsulation.None,
+  directives: [ROUTER_DIRECTIVES, MD_BUTTON_DIRECTIVES]
 })
 export class MissionComponent implements OnInit {
   @Input("mission") public mission: Mission;
 
-   constructor(private _compagnyService:CompanyService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
 
-  showCompany(id:number){
-      if(id !==undefined){
-          let company:Company = this._compagnyService.getCompany(id);
-          this._compagnyService.setCurrentCompany(company);
-          console.log("show : " + company.name);
-      }
-      
-  }
+
 }

@@ -1,9 +1,7 @@
 <div class="mission">
   <div class="date">{{mission.date}}</div>
   <div class="description">
-    <div class="title">{{mission.label}} <span *ngIf="mission.company" (click)="showCompany(mission.companyId)">- {{mission.company}}</span></div>
-    
-    
+    <div class="title">{{mission.label}} <a *ngIf="mission.company" [class.disabled]="mission.companyId==null" md-button [routerLink]="['/company', {id: mission.companyId}]">{{mission.company}}</a></div>
     <div class="subject">{{mission.subject}}</div>
     <div class="env" *ngIf="mission.environment">{{mission.environment}}</div>
   </div>

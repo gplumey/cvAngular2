@@ -1,6 +1,6 @@
 import { Component , ViewEncapsulation} from '@angular/core';
 import { Routes , Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
-import { CvComponent } from './cv/';
+import { CvComponent } from './+cv/';
 import { CompanyComponent } from './+company/';
 
 @Component({
@@ -15,7 +15,7 @@ import { CompanyComponent } from './+company/';
 
 @Routes([
         {path:"/", component:CvComponent},
-        {path:"/company/:id", component:CompanyComponent}])
+        {path:"/company", component:CompanyComponent}])
 export class AppComponent {
     title = 'Curriculum vitae';
     

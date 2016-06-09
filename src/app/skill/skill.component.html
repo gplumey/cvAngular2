@@ -4,7 +4,7 @@
     </div>
     <div *ngIf="skill.score > 0" class="skill-stars">
         <div style="display: table-cell ; padding-top:3px">
-            <div *ngFor="#star of stars" class="fa fa-{{getStartIcon(star)}} fa-fw"></div>
+            <div *ngFor="let star of stars" class="fa fa-{{getStartIcon(star)}} fa-fw"></div>
         </div>
     </div>
 </div>

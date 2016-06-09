@@ -3,4 +3,5 @@ export interface Company {
     name:string;
     detail:string;
     url?:string;
+    image:string;
 }

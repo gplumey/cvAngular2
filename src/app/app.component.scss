@@ -1,7 +1,10 @@
 @import "styles/screen";
 
 
-
+a.disabled {
+   pointer-events: none;
+   cursor: not-allowed; 
+}
 
 
 .content {

@@ -47,13 +47,14 @@ const barrels: string[] = [
   'app/age',
   'app/mission',
   'app/skill',
-  'app/cv',
   'app/section',
   'app/address',
   'app/subsection',
   'app/compagny',
   'app/company',
+  'app/+cv',
   'app/+company',
+  'app/+sendmail',
   /** @cli-barrel */
 ];
 
