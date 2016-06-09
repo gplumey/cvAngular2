@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , ViewEncapsulation} from '@angular/core';
 import { Routes , Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 import { CvComponent } from './cv/';
 import { CompanyComponent } from './+company/';
@@ -9,14 +9,15 @@ import { CompanyComponent } from './+company/';
     templateUrl: 'app.component.html',
     styleUrls: ['app.component.css'],
     
-    directives: [CvComponent, ROUTER_DIRECTIVES]
+    directives: [CvComponent, ROUTER_DIRECTIVES],
+    encapsulation:ViewEncapsulation.None
 })
 
 @Routes([
         {path:"/", component:CvComponent},
-        {path:"/company", component:CompanyComponent}])
+        {path:"/company/:id", component:CompanyComponent}])
 export class AppComponent {
-    title = 'my-angular2 works!';
+    title = 'Curriculum vitae';
     
     constructor(private _router:Router){
         

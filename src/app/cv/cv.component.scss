@@ -29,10 +29,7 @@
 .cv-container {
     @include panel;
    
-   @media screen and (min-width: $width-break-large) {
-        margin-top: 70px;
-        margin-bottom: 50px;
-    }
+   
     
   
     width: 100%;    

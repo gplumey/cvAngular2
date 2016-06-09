@@ -2,14 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 81, ../styles/_screen.scss */
-my-app {
-  display: block;
-  height: 100%;
-  width: 1200px;
-  margin: auto;
-}
-
 /* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -82,8 +74,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 29, cv.component.scss */
 .cv-container {
-  position: relative;
-  float: left;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
   width: 100%;
   display: table;
@@ -92,19 +84,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 29, cv.component.scss */
   .cv-container {
     width: 1200px;
-    -moz-box-shadow: black 2px 2px 10px;
-    -webkit-box-shadow: black 2px 2px 10px;
-    box-shadow: black 2px 2px 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 29, cv.component.scss */
-  .cv-container {
     margin-top: 70px;
     margin-bottom: 50px;
   }
 }
-/* line 44, cv.component.scss */
+/* line 41, cv.component.scss */
 .cv-container .cv-left-container {
   display: table-cell;
   height: 100%;
@@ -116,36 +100,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 33%;
 }
 @media screen and (max-width: 900px) {
-  /* line 44, cv.component.scss */
+  /* line 41, cv.component.scss */
   .cv-container .cv-left-container {
     display: table-row;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 44, cv.component.scss */
+  /* line 41, cv.component.scss */
   .cv-container .cv-left-container {
     display: table-row;
     width: 100%;
   }
 }
-/* line 56, cv.component.scss */
+/* line 53, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact {
   display: inline-table;
   width: 100%;
 }
-/* line 60, cv.component.scss */
+/* line 57, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .picture-container {
   display: table-row;
 }
 @media screen and (max-width: 900px) {
-  /* line 60, cv.component.scss */
+  /* line 57, cv.component.scss */
   .cv-container .cv-left-container .picturePlusContact .picture-container {
     display: table-cell;
     width: 50%;
     height: 100%;
   }
 }
-/* line 68, cv.component.scss */
+/* line 65, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .picture-container .picture {
   margin: 30px  auto;
   width: 200px;
@@ -158,18 +142,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-/* line 83, cv.component.scss */
+/* line 80, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact {
   display: table-row;
 }
 @media screen and (max-width: 900px) {
-  /* line 83, cv.component.scss */
+  /* line 80, cv.component.scss */
   .cv-container .cv-left-container .picturePlusContact .contact {
     width: 50%;
     display: table-cell;
   }
 }
-/* line 93, cv.component.scss */
+/* line 90, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact .name {
   font-weight: bold;
   font-size: 32px;
@@ -177,25 +161,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-left: 30px;
   display: block;
 }
-/* line 99, cv.component.scss */
+/* line 96, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact address {
   padding-top: 15px;
   padding-left: 30px;
   display: block;
 }
-/* line 103, cv.component.scss */
+/* line 100, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact age {
   padding-top: 15px;
   padding-left: 30px;
   display: block;
 }
 @media screen and (max-width: 900px) {
-  /* line 110, cv.component.scss */
+  /* line 107, cv.component.scss */
   .cv-container .cv-left-container .additionalSections {
     display: none;
   }
 }
-/* line 120, cv.component.scss */
+/* line 117, cv.component.scss */
 .cv-container .cv-right-container {
   font-size: 20px;
   padding: 30px 0px;
@@ -205,18 +189,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 67%;
 }
 @media screen and (max-width: 900px) {
-  /* line 120, cv.component.scss */
+  /* line 117, cv.component.scss */
   .cv-container .cv-right-container {
     display: table-row;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 120, cv.component.scss */
+  /* line 117, cv.component.scss */
   .cv-container .cv-right-container {
     width: 100%;
   }
 }
-/* line 128, cv.component.scss */
+/* line 125, cv.component.scss */
 .cv-container .cv-right-container .title {
   font-weight: bold;
   font-size: 32px;
@@ -224,12 +208,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 25;
   height: 100px;
 }
-/* line 135, cv.component.scss */
+/* line 132, cv.component.scss */
 .cv-container .cv-right-container skill {
   display: inline-block;
   width: 25%;
 }
-/* line 142, cv.component.scss */
+/* line 139, cv.component.scss */
 .cv-container .additionalSectionsSmallScreen {
   color: white;
   background-color: #0099DD;
@@ -241,24 +225,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-bottom: 10x;
 }
 @media screen and (max-width: 900px) {
-  /* line 142, cv.component.scss */
+  /* line 139, cv.component.scss */
   .cv-container .additionalSectionsSmallScreen {
     display: table-row;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 142, cv.component.scss */
+  /* line 139, cv.component.scss */
   .cv-container .additionalSectionsSmallScreen {
     display: none;
   }
 }
-/* line 152, cv.component.scss */
+/* line 149, cv.component.scss */
 .cv-container .additionalSectionsSmallScreen skill {
   display: inline-block;
   width: 25%;
 }
 
-/* line 161, cv.component.scss */
+/* line 158, cv.component.scss */
 entry {
   padding-top: 15px;
   padding-left: 30px;
