@@ -1,5 +1,8 @@
 /// <reference path="jspdf.d.ts" />
 import { Component, OnInit ,ElementRef} from '@angular/core';
+import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+
 import {CurriculumVitae} from '../domain/curriculumvitae.interface';
 import {AddressComponent} from '../address/';
 import {SectionComponent} from '../section/';
@@ -25,10 +28,12 @@ export class CvComponent implements OnInit {
      
    
     public cv: CurriculumVitae;
-    private _myElement: ElementRef;
-    constructor(_myElement: ElementRef) {
-        this._myElement = _myElement;
-       
+    
+    constructor(
+        private _myElement: ElementRef, 
+        private _title:Title,
+        private _router:Router) {
+           
          this.cv = {
             picture: "",
             firstName: "Guillaume",
@@ -142,6 +147,9 @@ export class CvComponent implements OnInit {
             professionTitle: "Architecte logicielle - Leader technique",
             professionSubTitle: "Java - Spring - J2EE"
         };
+        
+        
+        this._title.setTitle("CV " + this.cv.firstName + " " + this.cv.lastName);
     }
     ngOnInit() {
     }
@@ -153,6 +161,11 @@ export class CvComponent implements OnInit {
             'width': 800,
         });
         doc.save("Test.pdf");
+    }
+    
+    
+    contactMe(){
+        this._router.navigate(["/sendmail"]);
     }
     
     

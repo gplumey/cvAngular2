@@ -103,6 +103,11 @@
             }     
         
         
+        md-actions-bar {
+            width:100%;
+            text-align: center;  
+        }
+        
 }
         .additionalSections{
             @media screen and (max-width: $width-break-small) {

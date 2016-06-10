@@ -14,6 +14,8 @@ const materialPkgs:string[] = [
   'core',
   'button',
   'card',
+  'input',
+  'icon'
 ];
 
 materialPkgs.forEach((pkg) => {
@@ -33,7 +35,7 @@ const barrels: string[] = [
   '@angular/router',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
-  '@angular/router-deprecated',
+  
  
 
   // Thirdparty barrels.

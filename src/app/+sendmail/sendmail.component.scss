@@ -2,4 +2,20 @@
 
 .sendmail {
     @include panel($width-break-large / 2);
+    
+    md-input-container{
+        display: block;
+        margin-top:5px;
+        label {
+            color: rgba(0, 0, 0, 0.38);
+        }
+        
+        textarea {
+            width:100%;
+            resize: none;
+            overflow: hidden;
+            min-height: 100px;
+        }
+    }
+    
 }

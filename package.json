@@ -25,6 +25,8 @@
     "@angular2-material/button": "^2.0.0-alpha.5-2",
     "@angular2-material/card": "^2.0.0-alpha.5-2",
     "@angular2-material/core": "^2.0.0-alpha.5-2",
+    "@angular2-material/icon": "^2.0.0-alpha.5-2",
+    "@angular2-material/input": "^2.0.0-alpha.5-2",
     "es6-shim": "^0.35.0",
     "jspdf": "^1.2.61",
     "reflect-metadata": "0.1.3",

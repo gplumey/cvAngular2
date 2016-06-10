@@ -1,7 +1,23 @@
 <md-card class="sendmail">
-  <md-input placeholder="First name" style="width: 100%">
+    <md-icon>email</md-icon>
+    
+    <md-input placeholder="Société" style="width: 100%" dividerColor="accent"></md-input>
+
+    <div style="display:table; width:100%">
+        <md-input placeholder="Nom" style="display:table-cell;width:50%"></md-input>
+        <md-input placeholder="Prénom" style="display:table-cell;width:50%"></md-input>
+    </div>
+
+    <md-input placeholder="Prénom"></md-input>
+    <md-input-container>
+        <label>Message</label>
+        <textarea></textarea>
+    </md-input-container>
+
+
+
     <md-card-actions>
-      <button md-button (click)="return()">Retour</button>
-      <button md-button (click)="send()">Envoyer</button>
+        <button md-button (click)="return()">Retour</button>
+        <button md-button (click)="send()">Envoyer</button>
     </md-card-actions>
 </md-card>
