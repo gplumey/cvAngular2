@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Company } from './domain/company.interface';
+import { Company } from '../model/company.interface';
 
 @Injectable()
 export class CompanyService {

@@ -10,22 +10,32 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_INPUT_DIRECTIVES  } from '@angular2-material/input';
 import { MD_ICON_DIRECTIVES, MdIconRegistry } from '@angular2-material/icon';
 
+import {SkillComponent} from '../components/skill';
+
+import {CvService} from '../services/cv.service';
+import { Skill } from '../model/skill.interface';
+
 @Component({
     moduleId: module.id,
     selector: 'sendmail',
     templateUrl: 'sendmail.component.html',
     styleUrls: ['sendmail.component.css'],
-    directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_INPUT_DIRECTIVES, MD_ICON_DIRECTIVES],
-    providers: [Http, ConnectionBackend],
+    directives: [SkillComponent, MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_INPUT_DIRECTIVES, MD_ICON_DIRECTIVES],
+    providers: [Http, ConnectionBackend, CvService],
     viewProviders: [MdIconRegistry]
 })
 export class SendmailComponent implements OnInit {
+    skills: Skill[];
+
 
     constructor(
         private _title: Title,
-        private _router: Router) { }
+        private _router: Router,
+        private _cvService: CvService) { }
 
     ngOnInit() {
+        this.skills = this._cvService.getSkills(0);
+        console.log(this.skills);
     }
 
     public send() {

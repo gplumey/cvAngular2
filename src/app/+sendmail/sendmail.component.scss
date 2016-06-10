@@ -17,5 +17,14 @@
             min-height: 100px;
         }
     }
+
+    .skills {
+        display: inline;
+        width:100%;
+        skill{
+            display: inline-block;
+            width:calc(25% - 10px);
+        }
+    }
     
 }

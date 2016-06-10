@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation  } from '@angular/core';
-import { Skill } from '../domain/skill.interface';
+import { Skill } from '../../model/skill.interface';
 
 @Component({
     moduleId: module.id,

@@ -15,6 +15,9 @@
     </md-input-container>
 
 
+    <div *ngFor="let skill of skills" class="skills">
+        <skill [skill]="skill"></skill>
+    </div>
 
     <md-card-actions>
         <button md-button (click)="return()">Retour</button>

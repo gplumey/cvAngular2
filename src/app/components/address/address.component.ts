@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Address } from '../domain/address.interface';
+import { Address } from '../../model/address.interface';
 @Component({
   moduleId: module.id,
   selector: 'address',

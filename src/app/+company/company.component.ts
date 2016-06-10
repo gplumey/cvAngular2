@@ -5,8 +5,8 @@ import { Title } from '@angular/platform-browser';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 
-import { Company } from '../domain/company.interface';
-import { CompanyService } from '../company.service';
+import { Company } from '../model/company.interface';
+import { CompanyService } from '../services/company.service';
 
 @Component({
     moduleId: module.id,

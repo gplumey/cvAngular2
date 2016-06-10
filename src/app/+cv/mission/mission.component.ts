@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
 import {ROUTER_DIRECTIVES} from '@angular/router';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
-import { Mission} from '../domain//mission.interface';
-import {Company} from '../domain/company.interface';
+import { Mission} from '../../model/mission.interface';
+import {Company} from '../../model/company.interface';
 
 @Component({
   moduleId: module.id,

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import {Section} from '../domain/section.interface';
+import {Section} from '../../model/section.interface';
 
 @Component({
     moduleId: module.id,
