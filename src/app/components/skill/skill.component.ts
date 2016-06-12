@@ -9,9 +9,11 @@ import { Skill } from '../../model/skill.interface';
     styleUrls: ['skill.component.css']
 })
 export class SkillComponent implements OnInit {
-    @Input("skill") public skill: Skill;
-    stars: number[] = [1, 2, 3, 4, 5];
-
+    @Input() skill: Skill;
+    @Input() showScore:boolean = true;
+    
+    private stars: number[] = [1, 2, 3, 4, 5];
+    
 
     public getStartIcon(index: number) {
         if (this.skill.score > 0 && this.skill.score * this.stars.length >= index) {

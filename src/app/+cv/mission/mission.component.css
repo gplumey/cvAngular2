@@ -75,23 +75,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 3px;
   padding-bottom: 3px;
 }
-/* line 9, mission.component.scss */
+/* line 10, mission.component.scss */
 .mission .date {
   display: table-cell;
   width: 20%;
   text-align: center;
 }
-/* line 16, mission.component.scss */
+/* line 18, mission.component.scss */
 .mission .description {
-  width: 80%;
   display: table-cell;
+  width: 80%;
 }
-/* line 21, mission.component.scss */
+/* line 24, mission.component.scss */
 .mission .title {
   font-weight: bold;
 }
-/* line 25, mission.component.scss */
+/* line 29, mission.component.scss */
 .mission .env {
-  color: #0099DD;
   margin-top: 7.5px;
+  color: #0099DD;
 }

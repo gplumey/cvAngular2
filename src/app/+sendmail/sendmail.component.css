@@ -82,28 +82,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* line 6, sendmail.component.scss */
+.sendmail label {
+  display: inline;
+  color: rgba(0, 0, 0, 0.38);
+}
+/* line 12, sendmail.component.scss */
 .sendmail md-input-container {
   display: block;
   margin-top: 5px;
 }
-/* line 9, sendmail.component.scss */
-.sendmail md-input-container label {
-  color: rgba(0, 0, 0, 0.38);
-}
-/* line 13, sendmail.component.scss */
+/* line 20, sendmail.component.scss */
 .sendmail md-input-container textarea {
-  width: 100%;
-  resize: none;
   overflow: hidden;
+  width: 100%;
   min-height: 100px;
+  resize: none;
 }
-/* line 21, sendmail.component.scss */
+/* line 31, sendmail.component.scss */
 .sendmail .skills {
-  display: inline;
+  display: inline-table;
   width: 100%;
 }
-/* line 24, sendmail.component.scss */
-.sendmail .skills skill {
+/* line 36, sendmail.component.scss */
+.sendmail .skills md-checkbox {
   display: inline-block;
-  width: calc(25% - 10px);
+  width: calc(33% - 10px);
 }

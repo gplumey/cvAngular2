@@ -15,7 +15,8 @@ const materialPkgs:string[] = [
   'button',
   'card',
   'input',
-  'icon'
+  'icon',
+  'checkbox'
 ];
 
 materialPkgs.forEach((pkg) => {
@@ -56,6 +57,7 @@ const barrels: string[] = [
   'app/+cv',
   'app/+company',
   'app/+sendmail',
+  'app/components/selector',
   /** @cli-barrel */
 ];
 

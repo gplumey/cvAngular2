@@ -1,30 +1,43 @@
-@import "../styles/_screen";
+@import '../styles/_screen';
 
-.sendmail {
+.sendmail
+{
     @include panel($width-break-large / 2);
-    
-    md-input-container{
+    label
+    {
+        display: inline;
+
+        color: rgba(0, 0, 0, .38);
+    }
+    md-input-container
+    {
         display: block;
-        margin-top:5px;
-        label {
-            color: rgba(0, 0, 0, 0.38);
-        }
-        
-        textarea {
-            width:100%;
-            resize: none;
+
+        margin-top: 5px;
+
+
+
+        textarea
+        {
             overflow: hidden;
+
+            width: 100%;
             min-height: 100px;
+
+            resize: none;
         }
     }
 
-    .skills {
-        display: inline;
-        width:100%;
-        skill{
+    .skills
+    {
+        display: inline-table;
+
+        width: 100%;
+        md-checkbox
+        {
             display: inline-block;
-            width:calc(25% - 10px);
+
+            width: calc(33% - 10px);
         }
     }
-    
 }

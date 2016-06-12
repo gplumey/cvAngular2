@@ -69,37 +69,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 4, app.component.scss */
 a.disabled {
-  pointer-events: none;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
-/* line 10, app.component.scss */
+/* line 11, app.component.scss */
 .content {
   display: block;
   width: 100%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
-  /* line 10, app.component.scss */
+  /* line 11, app.component.scss */
   .content {
     width: 1200px;
   }
 }
 
-/* line 21, app.component.scss */
+/* line 25, app.component.scss */
 send-mail {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px 0;
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
-  margin-bottom: 30px;
   color: white;
   background-color: #0099DD;
-  padding: 20px 0px;
-  width: 100%;
 }
 @media screen and (min-width: 1200px) {
-  /* line 21, app.component.scss */
+  /* line 25, app.component.scss */
   send-mail {
     width: 1200px;
     margin-top: 30px;
@@ -107,13 +107,13 @@ send-mail {
   }
 }
 
-/* line 30, app.component.scss */
+/* line 36, app.component.scss */
 body {
   height: 100%;
   background-color: #ddd;
 }
 
-/* line 35, app.component.scss */
+/* line 42, app.component.scss */
 html {
   height: 100%;
 }

@@ -67,24 +67,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 22, cv.component.scss */
+/* line 25, cv.component.scss */
 .marginLeft {
   margin-left: 30px;
 }
 
-/* line 28, cv.component.scss */
+/* line 32, cv.component.scss */
 .cv-container {
+  display: table;
+  width: 100%;
   -moz-box-shadow: black 2px 2px 10px;
   -webkit-box-shadow: black 2px 2px 10px;
   box-shadow: black 2px 2px 10px;
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
-  width: 100%;
-  display: table;
 }
 @media screen and (min-width: 1200px) {
-  /* line 28, cv.component.scss */
+  /* line 32, cv.component.scss */
   .cv-container {
     width: 1200px;
     margin-top: 30px;
@@ -94,13 +94,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 41, cv.component.scss */
 .cv-container .cv-left-container {
   display: table-cell;
+  width: 33%;
   height: 100%;
   font-size: 20px;
-  padding: 30px 0px;
   display: table-cell;
+  padding: 30px 0;
   color: white;
   background-color: #0099DD;
-  width: 33%;
 }
 @media screen and (max-width: 900px) {
   /* line 41, cv.component.scss */
@@ -115,144 +115,144 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 100%;
   }
 }
-/* line 53, cv.component.scss */
+/* line 56, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact {
   display: inline-table;
   width: 100%;
 }
-/* line 57, cv.component.scss */
+/* line 61, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .picture-container {
   display: table-row;
 }
 @media screen and (max-width: 900px) {
-  /* line 57, cv.component.scss */
+  /* line 61, cv.component.scss */
   .cv-container .cv-left-container .picturePlusContact .picture-container {
     display: table-cell;
     width: 50%;
     height: 100%;
   }
 }
-/* line 65, cv.component.scss */
+/* line 71, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .picture-container .picture {
-  margin: 30px  auto;
   width: 200px;
   height: 200px;
-  border-radius: 100px;
+  margin: 30px  auto;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
+  border-radius: 100px;
   background: url(img/gplumey.jpg) no-repeat;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-/* line 80, cv.component.scss */
+/* line 87, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact {
   display: table-row;
 }
 @media screen and (max-width: 900px) {
-  /* line 80, cv.component.scss */
+  /* line 87, cv.component.scss */
   .cv-container .cv-left-container .picturePlusContact .contact {
-    width: 50%;
     display: table-cell;
+    width: 50%;
   }
 }
-/* line 90, cv.component.scss */
+/* line 98, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact .name {
   font-weight: bold;
   font-size: 32px;
+  display: block;
   padding-top: 15px;
   padding-left: 30px;
-  display: block;
 }
-/* line 96, cv.component.scss */
+/* line 104, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact address {
+  display: block;
   padding-top: 15px;
   padding-left: 30px;
-  display: block;
 }
-/* line 100, cv.component.scss */
+/* line 109, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact .contact age {
+  display: block;
   padding-top: 15px;
   padding-left: 30px;
-  display: block;
 }
-/* line 106, cv.component.scss */
+/* line 116, cv.component.scss */
 .cv-container .cv-left-container .picturePlusContact md-actions-bar {
   width: 100%;
   text-align: center;
 }
 @media screen and (max-width: 900px) {
-  /* line 112, cv.component.scss */
+  /* line 122, cv.component.scss */
   .cv-container .cv-left-container .additionalSections {
     display: none;
   }
 }
-/* line 122, cv.component.scss */
+/* line 131, cv.component.scss */
 .cv-container .cv-right-container {
+  width: 67%;
   font-size: 20px;
-  padding: 30px 0px;
   display: table-cell;
+  padding: 30px 0;
   color: black;
   background-color: white;
-  width: 67%;
 }
 @media screen and (max-width: 900px) {
-  /* line 122, cv.component.scss */
+  /* line 131, cv.component.scss */
   .cv-container .cv-right-container {
     display: table-row;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 122, cv.component.scss */
+  /* line 131, cv.component.scss */
   .cv-container .cv-right-container {
     width: 100%;
   }
 }
-/* line 130, cv.component.scss */
+/* line 142, cv.component.scss */
 .cv-container .cv-right-container .title {
+  height: 100px;
+  margin-top: 25;
+  text-align: center;
   font-weight: bold;
   font-size: 32px;
-  text-align: center;
-  margin-top: 25;
-  height: 100px;
 }
-/* line 137, cv.component.scss */
+/* line 150, cv.component.scss */
 .cv-container .cv-right-container skill {
   display: inline-block;
   width: 25%;
 }
-/* line 144, cv.component.scss */
+/* line 158, cv.component.scss */
 .cv-container .additionalSectionsSmallScreen {
-  color: white;
-  background-color: #0099DD;
-  font-size: 20px;
-  padding: 30px 0px;
-  display: table-cell;
   display: table;
   width: 100%;
   padding-bottom: 10x;
+  color: white;
+  background-color: #0099DD;
+  font-size: 20px;
+  display: table-cell;
+  padding: 30px 0;
 }
 @media screen and (max-width: 900px) {
-  /* line 144, cv.component.scss */
+  /* line 158, cv.component.scss */
   .cv-container .additionalSectionsSmallScreen {
     display: table-row;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 144, cv.component.scss */
+  /* line 158, cv.component.scss */
   .cv-container .additionalSectionsSmallScreen {
     display: none;
   }
 }
-/* line 154, cv.component.scss */
+/* line 172, cv.component.scss */
 .cv-container .additionalSectionsSmallScreen skill {
   display: inline-block;
   width: 25%;
 }
 
-/* line 163, cv.component.scss */
+/* line 182, cv.component.scss */
 entry {
+  display: block;
   padding-top: 15px;
   padding-left: 30px;
-  display: block;
 }

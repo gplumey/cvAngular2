@@ -1,5 +1,6 @@
-@import "../styles/_screen";
+@import '../styles/_screen';
 
-.company {
+.company
+{
     @include panel($width-break-large / 2);
 }

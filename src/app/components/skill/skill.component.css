@@ -72,11 +72,11 @@ skill {
   display: inline-block;
   margin-top: 5px;
 }
-/* line 6, skill.component.scss */
+/* line 8, skill.component.scss */
 skill .skill-title {
   display: table-row;
 }
-/* line 10, skill.component.scss */
+/* line 13, skill.component.scss */
 skill .skill-stars {
   display: table-row;
   border-spacing: 10px;

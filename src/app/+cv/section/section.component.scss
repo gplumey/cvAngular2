@@ -1,38 +1,45 @@
-@import "../../styles/screen";
- 
-.section-title {
-    @include bigger;
+@import '../../styles/screen';
+
+.section-title
+{
     margin-top: $v-margin;
     padding-left: $h-margin ;
-    
-    &.main{
-        
-        @include primary;
-        text-align: center;
 
-        @media screen and (min-width: $width-break-large) {
-           margin-right: $h-margin * 4;    
+    @include bigger;
+
+    &.main
+    {
+        text-align: center;
+        @include primary;
+
+        @media screen and (min-width: $width-break-large)
+        {
+            margin-right: $h-margin * 4;
         }
-       
-        
-        @media screen and (max-width: $width-break-small) {
-           margin-right:0px;      
+
+        @media screen and (max-width: $width-break-small)
+        {
+            margin-right: 0;
         }
     }
-    &.secondary{
+    &.secondary
+    {
         @include primaryReverse;
 
-         @media screen and (min-width: $width-break-large) {
-          margin-right: $h-margin;
-       }
-       
-        
-          @media screen and (max-width: $width-break-small) {
-           margin-right:0px;      
+        @media screen and (min-width: $width-break-large)
+        {
+            margin-right: $h-margin;
+        }
+
+
+        @media screen and (max-width: $width-break-small)
+        {
+            margin-right: 0;
         }
     }
 }
 
-.section-items{
-      padding-top: 10px;
+.section-items
+{
+    padding-top: 10px;
 }

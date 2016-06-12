@@ -2,7 +2,7 @@
     <div class="skill-title">
         <div style="display: table-cell">{{skill.label}}</div>
     </div>
-    <div *ngIf="skill.score > 0" class="skill-stars">
+    <div *ngIf="showScore && skill.score > 0" class="skill-stars">
         <div style="display: table-cell ; padding-top:3px">
             <div *ngFor="let star of stars" class="fa fa-{{getStartIcon(star)}} fa-fw"></div>
         </div>

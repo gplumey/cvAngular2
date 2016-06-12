@@ -1,6 +1,6 @@
 <md-card class="sendmail">
     <md-icon>email</md-icon>
-    
+
     <md-input placeholder="Société" style="width: 100%" dividerColor="accent"></md-input>
 
     <div style="display:table; width:100%">
@@ -14,9 +14,11 @@
         <textarea></textarea>
     </md-input-container>
 
-
-    <div *ngFor="let skill of skills" class="skills">
-        <skill [skill]="skill"></skill>
+    <label>Compétences appréciées</label>
+    <div class="skills">
+        <md-checkbox *ngFor="let skill of skills" [(ngModel)]="skill.selected">
+            <skill [skill]="skill" [showScore]="false"></skill>
+        </md-checkbox>
     </div>
 
     <md-card-actions>

@@ -13,13 +13,11 @@ import {Company} from '../../model/company.interface';
   directives: [ROUTER_DIRECTIVES, MD_BUTTON_DIRECTIVES]
 })
 export class MissionComponent implements OnInit {
-  @Input("mission") public mission: Mission;
+  @Input() public mission: Mission;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-
 
 }

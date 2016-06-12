@@ -31,9 +31,9 @@ export class CompanyComponent implements OnInit {
         if (this._id !== undefined) {
             this.company = this._companyService.getCompany(this._id);
             this._title.setTitle(this.company.name);
-
         }
     }
+
 
     ngOnInit() {
     }
