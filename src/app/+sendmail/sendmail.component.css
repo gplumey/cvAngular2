@@ -93,17 +93,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 20, sendmail.component.scss */
 .sendmail md-input-container textarea {
-  overflow: hidden;
   width: 100%;
   min-height: 100px;
+  font: inherit;
   resize: none;
 }
-/* line 31, sendmail.component.scss */
+/* line 29, sendmail.component.scss */
 .sendmail .skills {
   display: inline-table;
   width: 100%;
 }
-/* line 36, sendmail.component.scss */
+/* line 34, sendmail.component.scss */
 .sendmail .skills md-checkbox {
   display: inline-block;
   width: calc(33% - 10px);

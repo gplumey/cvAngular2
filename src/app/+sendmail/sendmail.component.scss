@@ -19,11 +19,9 @@
 
         textarea
         {
-            overflow: hidden;
-
             width: 100%;
             min-height: 100px;
-
+            font: inherit;
             resize: none;
         }
     }

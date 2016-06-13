@@ -1,17 +1,13 @@
 <md-card class="sendmail">
     <md-icon>email</md-icon>
 
-    <md-input placeholder="Société" style="width: 100%" dividerColor="accent"></md-input>
+    <md-input placeholder="Société" style="width: 100%" dividerColor="accent" [(ngModel)]="mail.company"></md-input>
+    <md-input placeholder="E-mail" style="width: 100%" [(ngModel)]="mail.email"></md-input>
+    <md-input placeholder="Ville" style="width: 100%" [(ngModel)]="mail.city"></md-input>
 
-    <div style="display:table; width:100%">
-        <md-input placeholder="Nom" style="display:table-cell;width:50%"></md-input>
-        <md-input placeholder="Prénom" style="display:table-cell;width:50%"></md-input>
-    </div>
-
-    <md-input placeholder="Prénom"></md-input>
     <md-input-container>
         <label>Message</label>
-        <textarea></textarea>
+        <textarea [(ngModel)]="mail.message"></textarea>
     </md-input-container>
 
     <label>Compétences appréciées</label>

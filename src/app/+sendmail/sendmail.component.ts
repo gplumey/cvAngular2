@@ -14,20 +14,22 @@ import { MD_CHECKBOX_DIRECTIVES} from '@angular2-material/checkbox'
 import {SkillComponent} from '../components/skill';
 import {CvService} from '../services/cv.service';
 import { Skill } from '../model/skill.interface';
+import { Mail } from '../model/mail';
 
 @Component({
     moduleId: module.id,
     selector: 'sendmail',
     templateUrl: 'sendmail.component.html',
     styleUrls: ['sendmail.component.css'],
-    directives: [SkillComponent, 
-        MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_INPUT_DIRECTIVES, MD_ICON_DIRECTIVES,MD_CHECKBOX_DIRECTIVES],
+    directives: [SkillComponent,
+        MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MD_INPUT_DIRECTIVES, MD_ICON_DIRECTIVES, MD_CHECKBOX_DIRECTIVES],
     providers: [Http, ConnectionBackend, CvService],
     viewProviders: [MdIconRegistry]
 })
 export class SendmailComponent implements OnInit {
     skills: Skill[];
 
+    mail: Mail = new Mail();
 
     constructor(
         private _title: Title,
@@ -40,7 +42,7 @@ export class SendmailComponent implements OnInit {
     }
 
     public send() {
-
+        console.log(this.mail);
     }
 
     public return() {
