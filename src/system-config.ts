@@ -42,7 +42,7 @@ const barrels: string[] = [
   // Thirdparty barrels.
   'rxjs',
   'jspdf',
-
+  'cv-common',
 
   // App specific barrels.
   'app',
@@ -75,7 +75,8 @@ System.config({
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
     'main': 'main.js',
-    'jspdf': 'vendor/jspdf.min.js'
+    'jspdf': 'vendor/jspdf.min.js',
+    'cv-common': 'vendor/cv-common'
   },
   packages: cliSystemConfigPackages
 });

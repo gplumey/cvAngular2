@@ -13,7 +13,9 @@ module.exports = function(defaults) {
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
       '@angular2-material/**/*',
-      'jspdf/dist/jspdf.min.js'
+      'jspdf/dist/jspdf.min.js',
+      'cv-common/dist/**/*.js',
+      'cv-common/dist/*.js'
     ]
   });
 };

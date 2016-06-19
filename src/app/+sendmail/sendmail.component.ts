@@ -16,6 +16,8 @@ import {CvService} from '../services/cv.service';
 import { Skill } from '../model/skill.interface';
 import { Mail } from '../model/mail';
 
+import {CommonMail} from 'cv-common/dist';
+
 @Component({
     moduleId: module.id,
     selector: 'sendmail',
@@ -29,7 +31,7 @@ import { Mail } from '../model/mail';
 export class SendmailComponent implements OnInit {
     skills: Skill[];
 
-    mail: Mail = new Mail();
+    mail: Mail = new CommonMail();
 
     constructor(
         private _title: Title,
